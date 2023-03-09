@@ -2,9 +2,13 @@
 :root {
     /* primary */
     --light-red: hsl(0, 100%, 67%);
+    --red-back: hsla(0, 100%, 67%, 0.087);
     --orangey-yellow: hsl(39, 100%, 56%);
+    --orange-back:hsla(39, 100%, 56%, 0.087);
     --green-teal: hsl(166, 100%, 37%);
+    --green-back:hsla(166, 100%, 37%, 0.087);
     --cobalt-blue: hsl(234, 85%, 45%);
+    --cobalt-back: hsla(234, 85%, 45%, 0.087);
 
 
     /* gradients */
@@ -21,11 +25,90 @@
     --pale-blue : hsl(221, 100%, 96%);
     --light-lavender : hsl(241, 100%, 89%);
     --dark-gray-blue : hsl(224, 30%, 27%);
+    /* --light-grey: hsla(225, 2%, 38%, 0.487); */
+
+}
+/* reset margin and padding */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+    height: 600px;
+    margin: 100px auto;
+    box-shadow: 12px 12px 10px var(--pale-blue);
+}
+
+.left {
+    /* background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue)); */
+    border-radius: 30px;
+}
+
+.details {
 
 }
 
-.measure
+.score {
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+    margin: auto;
+}
+
+.right {
+
+}
+
+.meas-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.measure {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.left-meas {
+    display: flex;
+}
+
+.meas-reac {
+    background-color: var(--red-back);
+}
+
+.meas-mem {
+    background-color: var(--orange-back);
+}
+
+.meas-verb {
+    background-color: var(--green-back);
+}
+
+.meas-vis {
+    background-color: var(--cobalt-back);
+}
 
 .reaction p{
     color: var(--light-red);
+}
+
+
+.cont {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
 }
