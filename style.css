@@ -1,3 +1,6 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
 /* import colors */
 :root {
     /* primary */
@@ -35,19 +38,46 @@
     padding: 0;
 } */
 
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pale-blue);
+
+}
+
 .container {
-    border-radius: 30px;
+    border-radius: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 800px;
-    height: 600px;
-    margin: 100px auto;
+    width: 650px;
+    height: 500px;
     box-shadow: 12px 12px 10px var(--pale-blue);
+    background-color: var(--white);
 }
 
 .left {
-    /* background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue)); */
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
     border-radius: 30px;
+    text-align: center;
+}
+
+.left .title {
+    color: var(--light-lavender);
+}
+
+.numerator {
+    color: var(--white);
+}
+
+p {
+    font-size: 18px;
+}
+
+.denominator {
+    color: var(--light-lavender);
 }
 
 .details {
@@ -63,7 +93,7 @@
 }
 
 .right {
-
+    background-color: var(--white);
 }
 
 .meas-container {
